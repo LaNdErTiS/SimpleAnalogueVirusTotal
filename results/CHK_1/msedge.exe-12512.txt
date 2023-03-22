@@ -1,0 +1,16 @@
+{
+    "pid": 12512,
+    "ppid": 8964,
+    "name": "msedge.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --display-capture-permissions-policy-allowed --js-flags=--ms-user-locale= --first-renderer-process --lang=en-US --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=21 --time-ticks-at-unix-epoch=-1669728413971238 --launch-time-ticks=168693871801 --mojo-platform-channel-handle=2668 --field-trial-handle=2040,i,238237982218134037,14760503245492303543,131072 /prefetch:1",
+    "exe_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": null
+}

@@ -1,0 +1,16 @@
+{
+    "pid": 11396,
+    "ppid": 15568,
+    "name": "Teams.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "\"C:\\Users\\LanDe\\AppData\\Local\\Microsoft\\Teams\\current\\Teams.exe\" --type=renderer --enable-wer --user-data-dir=\"C:\\Users\\LanDe\\AppData\\Roaming\\Microsoft\\Teams\" --ms-teams-less-cors=522133263 --app-user-model-id=com.squirrel.Teams.Teams --app-path=\"C:\\Users\\LanDe\\AppData\\Local\\Microsoft\\Teams\\current\\resources\\app.asar\" --autoplay-policy=no-user-gesture-required --disable-background-timer-throttling --field-trial-handle=1668,13628173099732755142,276145721739996152,131072 --enable-features=ContextBridgeMutability,SharedArrayBuffer,WinUseBrowserSpellChecker,WinUseHybridSpellChecker --disable-features=CalculateNativeWinOcclusion,ExtraCookieValidityChecks,ForcedColors,MediaFoundationAsyncH264Encoding,PlzServiceWorker,SpareRendererForSitePerProcess,WinRetrieveSuggestionsOnlyOnDemand --lang=en-US --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=4149 --mojo-platform-channel-handle=7068 /prefetch:1",
+    "exe_path": "C:\\Users\\LanDe\\AppData\\Local\\Microsoft\\Teams\\current\\Teams.exe",
+    "packer": "unknown",
+    "signature": "AuthenticodeVerificationResult.OK",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": null
+}

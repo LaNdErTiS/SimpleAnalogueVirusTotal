@@ -1,0 +1,22 @@
+{
+    "pid": 15696,
+    "ppid": 1192,
+    "name": "backgroundTaskHost.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "\"C:\\Windows\\system32\\backgroundTaskHost.exe\" -ServerName:App.AppXxd4bvvrygtvz8nr8j6x6ae3rrbq51bhw.mca",
+    "exe_path": null,
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": {
+        "backgroundTaskHost.exe": {
+            ".text": {
+                "result": "OK"
+            }
+        }
+    }
+}

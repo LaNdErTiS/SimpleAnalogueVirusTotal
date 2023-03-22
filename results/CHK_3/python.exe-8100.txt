@@ -1,0 +1,16 @@
+{
+    "pid": 8100,
+    "ppid": 5824,
+    "name": "python.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "\"D:\\Program Files\\Python310\\python.exe\" \"C:\\Program Files\\JetBrains\\Toolbox\\apps\\PyCharm-C\\ch-0\\222.4345.23\\plugins\\python-ce\\helpers\\pycodestyle.py\" --max-line-length=120 -",
+    "exe_path": null,
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": null
+}

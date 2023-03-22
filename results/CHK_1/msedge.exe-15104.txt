@@ -1,0 +1,149 @@
+{
+    "pid": 15104,
+    "ppid": 8964,
+    "name": "msedge.exe",
+    "score": {
+        "total_score": 10,
+        "reasons": [
+            {
+                "score_impact": 10,
+                "reason": "mitre_techniques"
+            }
+        ]
+    },
+    "cmd_line": "\"C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe\" --type=renderer --display-capture-permissions-policy-allowed --js-flags=--ms-user-locale= --lang=en-US --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=27 --time-ticks-at-unix-epoch=-1669728413971238 --launch-time-ticks=168702494650 --mojo-platform-channel-handle=5716 --field-trial-handle=2040,i,238237982218134037,14760503245492303543,131072 /prefetch:1",
+    "exe_path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+    "packer": "Microsoft Visual C++ 8.0 (DLL)",
+    "signature": "AuthenticodeVerificationResult.OK",
+    "sections_rights": [
+        {
+            "section": ".text",
+            "rights": [
+                "IMAGE_SCN_CNT_CODE",
+                "IMAGE_SCN_MEM_EXECUTE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".rdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".data",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".pdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".00cfg",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".gxfg",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".retplne",
+            "rights": []
+        },
+        {
+            "section": ".tls",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".voltbl",
+            "rights": []
+        },
+        {
+            "section": "CPADinfo",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": "_RDATA",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": "malloc_h",
+            "rights": [
+                "IMAGE_SCN_CNT_CODE",
+                "IMAGE_SCN_MEM_EXECUTE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".rsrc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".reloc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_DISCARDABLE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        }
+    ],
+    "mitre_techniques": {
+        "T1055": {
+            "inject_remote_thread": {
+                "description": "Code injection with CreateRemoteThread",
+                "indicators_matched": [
+                    "OpenProcess",
+                    "VirtualAllocEx",
+                    "WriteProcessMemory",
+                    "CreateRemoteThread",
+                    "CreateThread"
+                ]
+            }
+        },
+        "T1134": {
+            "token_impersonation": {
+                "description": "Access Token Manipulation",
+                "indicators_matched": [
+                    "ImpersonateLoggedOnUser",
+                    "SetThreadToken"
+                ]
+            }
+        }
+    },
+    "connections": [],
+    "memory_check": {
+        "msedge.exe": {
+            ".text": {
+                "result": "OK"
+            }
+        }
+    }
+}

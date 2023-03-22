@@ -1,0 +1,16 @@
+{
+    "pid": 16228,
+    "ppid": 9236,
+    "name": "runnerw.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "\"C:\\Program Files\\JetBrains\\Toolbox\\apps\\PyCharm-C\\ch-0\\222.4345.23\\bin\\runnerw.exe\" \"D:\\Program Files\\Git\\cmd\\git.exe\" -c credential.helper= -c core.quotepath=false -c log.showSignature=false status --porcelain -z --untracked-files=no --ignored=no -- results/01-12-2022_14-21-21",
+    "exe_path": "C:\\Program Files\\JetBrains\\Toolbox\\apps\\PyCharm-C\\ch-0\\222.4345.23\\bin\\runnerw.exe",
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": null
+}

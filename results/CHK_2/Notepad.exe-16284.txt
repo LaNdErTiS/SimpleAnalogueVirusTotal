@@ -1,0 +1,16 @@
+{
+    "pid": 16284,
+    "ppid": 4764,
+    "name": "Notepad.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "\"C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_11.2209.6.0_x64__8wekyb3d8bbwe\\Notepad\\Notepad.exe\" \"C:\\Users\\LanDe\\Desktop\\test\\results\\30-11-2022_15-18-04\\firefox.exe-9396.txt\"",
+    "exe_path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsNotepad_11.2209.6.0_x64__8wekyb3d8bbwe\\Notepad\\Notepad.exe",
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": null
+}

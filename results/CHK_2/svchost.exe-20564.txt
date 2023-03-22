@@ -1,0 +1,92 @@
+{
+    "pid": 20564,
+    "ppid": 988,
+    "name": "svchost.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": null,
+    "exe_path": null,
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64758
+            },
+            "to": {
+                "ip": "34.204.224.185",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64759
+            },
+            "to": {
+                "ip": "34.117.35.28",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64758
+            },
+            "to": {
+                "ip": "34.204.224.185",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64758
+            },
+            "to": {
+                "ip": "34.204.224.185",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64759
+            },
+            "to": {
+                "ip": "34.117.35.28",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 0
+        }
+    ],
+    "memory_check": null
+}

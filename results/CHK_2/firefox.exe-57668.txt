@@ -1,0 +1,143 @@
+{
+    "pid": 57668,
+    "ppid": 45984,
+    "name": "firefox.exe",
+    "score": {
+        "total_score": 12,
+        "reasons": [
+            {
+                "score_impact": 12,
+                "reason": "malicious_connection",
+                "data": {
+                    "from": {
+                        "ip": "192.168.0.175",
+                        "port": 64719
+                    },
+                    "to": {
+                        "ip": "104.16.249.249",
+                        "port": 443
+                    },
+                    "domain": "cloudflare.com",
+                    "country": "US",
+                    "usageType": "Content Delivery Network",
+                    "isp": "CloudFlare Inc.",
+                    "abuseScore": 12
+                }
+            }
+        ]
+    },
+    "cmd_line": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"45984.1.1111059052\\1101633300\" -parentBuildID 20221110173214 -prefsHandle 2192 -prefMapHandle 2180 -prefsLen 27817 -prefMapSize 234096 -win32kLockedDown -appDir \"C:\\Program Files\\Mozilla Firefox\\browser\" - {1acee4a9-dbe6-41d9-9aeb-c1eee6405f6e} 45984 \"\\\\.\\pipe\\gecko-crash-server-pipe.45984\" 2204 1ee3d53de58 socket",
+    "exe_path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64719
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64720
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64719
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64720
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64707
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64706
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "192.168.0.175",
+                "port": 64720
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        }
+    ],
+    "memory_check": null
+}

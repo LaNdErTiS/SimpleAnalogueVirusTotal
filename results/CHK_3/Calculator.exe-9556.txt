@@ -1,0 +1,68 @@
+{
+    "pid": 9556,
+    "ppid": 1192,
+    "name": "Calculator.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "\"C:\\Program Files\\WindowsApps\\Microsoft.WindowsCalculator_10.2103.8.0_x64__8wekyb3d8bbwe\\Calculator.exe\" -ServerName:App.AppXsm3pg4n7er43kdh1qp4e79f1j7am68r8.mca",
+    "exe_path": "C:\\Program Files\\WindowsApps\\Microsoft.WindowsCalculator_10.2103.8.0_x64__8wekyb3d8bbwe\\Calculator.exe",
+    "packer": "Microsoft Visual C++ 8.0 (DLL)",
+    "signature": "AuthenticodeVerificationResult.NOT_SIGNED",
+    "sections_rights": [
+        {
+            "section": ".text",
+            "rights": [
+                "IMAGE_SCN_CNT_CODE",
+                "IMAGE_SCN_MEM_EXECUTE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".rdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".data",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".pdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".rsrc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".reloc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_DISCARDABLE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        }
+    ],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": {
+        "Calculator.exe": {
+            ".text": {
+                "result": "OK"
+            }
+        }
+    }
+}

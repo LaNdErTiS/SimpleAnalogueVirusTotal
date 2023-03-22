@@ -1,0 +1,119 @@
+{
+    "pid": 10752,
+    "ppid": 16908,
+    "name": "git.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "git.exe -c credential.helper= -c core.quotepath=false -c log.showSignature=false status --porcelain -z --no-renames --untracked-files=all --ignored=matching -- results/01-12-2022_14-21-21",
+    "exe_path": "D:\\Program Files\\Git\\mingw64\\bin\\git.exe",
+    "packer": "Microsoft Visual C++ 8.0 (DLL)",
+    "signature": "AuthenticodeVerificationResult.OK",
+    "sections_rights": [
+        {
+            "section": ".text",
+            "rights": [
+                "IMAGE_SCN_CNT_CODE",
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_EXECUTE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".data",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".rdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".pdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".xdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".bss",
+            "rights": [
+                "IMAGE_SCN_CNT_UNINITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".edata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".idata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".CRT",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".tls",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".rsrc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".reloc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_DISCARDABLE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".debug",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_DISCARDABLE",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        }
+    ],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": null
+}

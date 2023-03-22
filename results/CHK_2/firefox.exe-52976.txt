@@ -1,0 +1,16 @@
+{
+    "pid": 52976,
+    "ppid": 45984,
+    "name": "firefox.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"45984.2.2135740128\\261886561\" -childID 1 -isForBrowser -prefsHandle 3252 -prefMapHandle 3248 -prefsLen 28132 -prefMapSize 234096 -jsInitHandle 1460 -jsInitLen 246704 -a11yResourceId 64 -parentBuildID 20221110173214 -win32kLockedDown -appDir \"C:\\Program Files\\Mozilla Firefox\\browser\" - {e45daf47-c070-45f3-b447-980b7c7c5503} 45984 \"\\\\.\\pipe\\gecko-crash-server-pipe.45984\" 3264 1ee3d98db58 tab",
+    "exe_path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": null
+}

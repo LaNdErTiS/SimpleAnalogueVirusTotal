@@ -1,0 +1,303 @@
+{
+    "pid": 6160,
+    "ppid": 8176,
+    "name": "firefox.exe",
+    "score": {
+        "total_score": 22,
+        "reasons": [
+            {
+                "score_impact": 12,
+                "reason": "malicious_connection",
+                "data": {
+                    "from": {
+                        "ip": "10.210.8.221",
+                        "port": 64892
+                    },
+                    "to": {
+                        "ip": "104.16.249.249",
+                        "port": 443
+                    },
+                    "domain": "cloudflare.com",
+                    "country": "US",
+                    "usageType": "Content Delivery Network",
+                    "isp": "CloudFlare Inc.",
+                    "abuseScore": 12
+                }
+            },
+            {
+                "score_impact": 10,
+                "reason": "mitre_techniques"
+            }
+        ]
+    },
+    "cmd_line": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\" -contentproc --channel=\"8176.1.1865034103\\1404974419\" -parentBuildID 20221128144904 -prefsHandle 2208 -prefMapHandle 2204 -prefsLen 33594 -prefMapSize 236199 -win32kLockedDown -appDir \"C:\\Program Files\\Mozilla Firefox\\browser\" - {a40d7cf4-fdc7-4bfb-84bc-36acb7fafe2e} 8176 \"\\\\.\\pipe\\gecko-crash-server-pipe.8176\" 2220 1479d335d58 socket",
+    "exe_path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "packer": "Microsoft Visual C++ 8.0 (DLL)",
+    "signature": "AuthenticodeVerificationResult.OK",
+    "sections_rights": [
+        {
+            "section": ".text",
+            "rights": [
+                "IMAGE_SCN_CNT_CODE",
+                "IMAGE_SCN_MEM_EXECUTE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".rdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".data",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".pdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".00cfg",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".freestd",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".tls",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".rsrc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".reloc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_DISCARDABLE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        }
+    ],
+    "mitre_techniques": {
+        "T1055": {
+            "inject_remote_thread": {
+                "description": "Code injection with CreateRemoteThread",
+                "indicators_matched": [
+                    "OpenProcess",
+                    "VirtualAllocEx",
+                    "WriteProcessMemory",
+                    "CreateRemoteThread",
+                    "CreateThread"
+                ]
+            }
+        },
+        "T1134": {
+            "token_impersonation": {
+                "description": "Access Token Manipulation",
+                "indicators_matched": [
+                    "ImpersonateLoggedOnUser",
+                    "SetThreadToken"
+                ]
+            }
+        }
+    },
+    "connections": [
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64892
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64893
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64892
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64893
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64905
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64905
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64906
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64906
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64892
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64893
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64906
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        }
+    ],
+    "memory_check": {
+        "firefox.exe": {
+            ".text": {
+                "result": "OK"
+            }
+        }
+    }
+}

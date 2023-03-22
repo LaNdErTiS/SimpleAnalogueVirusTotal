@@ -1,0 +1,1253 @@
+{
+    "pid": 8176,
+    "ppid": 8988,
+    "name": "firefox.exe",
+    "score": {
+        "total_score": 45,
+        "reasons": [
+            {
+                "score_impact": 35,
+                "reason": "malicious_connection",
+                "data": {
+                    "from": {
+                        "ip": "10.210.8.221",
+                        "port": 64926
+                    },
+                    "to": {
+                        "ip": "34.120.208.123",
+                        "port": 443
+                    },
+                    "domain": "google.com",
+                    "country": "US",
+                    "usageType": "Data Center/Web Hosting/Transit",
+                    "isp": "Google LLC",
+                    "abuseScore": 35
+                }
+            },
+            {
+                "score_impact": 10,
+                "reason": "mitre_techniques"
+            }
+        ]
+    },
+    "cmd_line": "\"C:\\Program Files\\Mozilla Firefox\\firefox.exe\"",
+    "exe_path": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+    "packer": "Microsoft Visual C++ 8.0 (DLL)",
+    "signature": "AuthenticodeVerificationResult.OK",
+    "sections_rights": [
+        {
+            "section": ".text",
+            "rights": [
+                "IMAGE_SCN_CNT_CODE",
+                "IMAGE_SCN_MEM_EXECUTE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".rdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".data",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".pdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".00cfg",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".freestd",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".tls",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".rsrc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".reloc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_DISCARDABLE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        }
+    ],
+    "mitre_techniques": {
+        "T1055": {
+            "inject_remote_thread": {
+                "description": "Code injection with CreateRemoteThread",
+                "indicators_matched": [
+                    "OpenProcess",
+                    "VirtualAllocEx",
+                    "WriteProcessMemory",
+                    "CreateRemoteThread",
+                    "CreateThread"
+                ]
+            }
+        },
+        "T1134": {
+            "token_impersonation": {
+                "description": "Access Token Manipulation",
+                "indicators_matched": [
+                    "ImpersonateLoggedOnUser",
+                    "SetThreadToken"
+                ]
+            }
+        }
+    },
+    "connections": [
+        {
+            "from": {
+                "ip": "127.0.0.1",
+                "port": 64880
+            },
+            "to": {
+                "ip": "127.0.0.1",
+                "port": 64879
+            }
+        },
+        {
+            "from": {
+                "ip": "127.0.0.1",
+                "port": 64879
+            },
+            "to": {
+                "ip": "127.0.0.1",
+                "port": 64880
+            }
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64896
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64895
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64894
+            },
+            "to": {
+                "ip": "34.107.221.82",
+                "port": 80
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 22
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64899
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64897
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64900
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64898
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64902
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64903
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64904
+            },
+            "to": {
+                "ip": "34.107.221.82",
+                "port": 80
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 22
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64907
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64908
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64910
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64909
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64904
+            },
+            "to": {
+                "ip": "34.107.221.82",
+                "port": 80
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 22
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64916
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64914
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64913
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64915
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64918
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64919
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64921
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64920
+            },
+            "to": {
+                "ip": "104.16.248.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 4
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64923
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64924
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64924
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64923
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64926
+            },
+            "to": {
+                "ip": "34.120.208.123",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 35
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64927
+            },
+            "to": {
+                "ip": "34.120.208.123",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 35
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64928
+            },
+            "to": {
+                "ip": "34.107.141.31",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64929
+            },
+            "to": {
+                "ip": "34.117.237.239",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64931
+            },
+            "to": {
+                "ip": "54.148.142.57",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64930
+            },
+            "to": {
+                "ip": "54.187.179.42",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon.com Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64932
+            },
+            "to": {
+                "ip": "54.148.142.57",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64927
+            },
+            "to": {
+                "ip": "34.120.208.123",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 35
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64923
+            },
+            "to": {
+                "ip": "104.16.249.249",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64926
+            },
+            "to": {
+                "ip": "34.120.208.123",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 35
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64929
+            },
+            "to": {
+                "ip": "34.117.237.239",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 12
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64928
+            },
+            "to": {
+                "ip": "34.107.141.31",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64937
+            },
+            "to": {
+                "ip": "93.184.220.29",
+                "port": 80
+            },
+            "domain": "edgecast.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "EdgeCast NetBlk",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64936
+            },
+            "to": {
+                "ip": "93.184.220.29",
+                "port": 80
+            },
+            "domain": "edgecast.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "EdgeCast NetBlk",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64934
+            },
+            "to": {
+                "ip": "93.184.220.29",
+                "port": 80
+            },
+            "domain": "edgecast.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "EdgeCast NetBlk",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "2001:0:284a:364:18af:74c:3c2e:194b",
+                "port": 64933
+            },
+            "to": {
+                "ip": "2a00:1450:4010:c0e::5f",
+                "port": 443
+            },
+            "domain": "1e100.net",
+            "country": "FI",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "EU Metro Frontend",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64935
+            },
+            "to": {
+                "ip": "93.184.220.29",
+                "port": 80
+            },
+            "domain": "edgecast.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "EdgeCast NetBlk",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64938
+            },
+            "to": {
+                "ip": "172.67.216.9",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64935
+            },
+            "to": {
+                "ip": "93.184.220.29",
+                "port": 80
+            },
+            "domain": "edgecast.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "EdgeCast NetBlk",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64937
+            },
+            "to": {
+                "ip": "93.184.220.29",
+                "port": 80
+            },
+            "domain": "edgecast.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "EdgeCast NetBlk",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64936
+            },
+            "to": {
+                "ip": "93.184.220.29",
+                "port": 80
+            },
+            "domain": "edgecast.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "EdgeCast NetBlk",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64934
+            },
+            "to": {
+                "ip": "93.184.220.29",
+                "port": 80
+            },
+            "domain": "edgecast.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "EdgeCast NetBlk",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64938
+            },
+            "to": {
+                "ip": "172.67.216.9",
+                "port": 443
+            },
+            "domain": "cloudflare.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "CloudFlare Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64939
+            },
+            "to": {
+                "ip": "34.210.158.59",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64932
+            },
+            "to": {
+                "ip": "54.148.142.57",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64931
+            },
+            "to": {
+                "ip": "54.148.142.57",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64930
+            },
+            "to": {
+                "ip": "54.187.179.42",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon.com Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64939
+            },
+            "to": {
+                "ip": "34.210.158.59",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64959
+            },
+            "to": {
+                "ip": "18.165.121.135",
+                "port": 80
+            },
+            "domain": "amazon.com",
+            "country": "FI",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon.com Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64950
+            },
+            "to": {
+                "ip": "35.186.227.140",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 28
+        },
+        {
+            "from": {
+                "ip": "2001:0:284a:364:18af:74c:3c2e:194b",
+                "port": 64943
+            },
+            "to": {
+                "ip": "2a02:26f0:7700::1723:6859",
+                "port": 80
+            },
+            "domain": "akamai.com",
+            "country": "RU",
+            "usageType": "Content Delivery Network",
+            "isp": "Akamai Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "2001:0:284a:364:18af:74c:3c2e:194b",
+                "port": 64944
+            },
+            "to": {
+                "ip": "2a02:26f0:7700::1723:6859",
+                "port": 80
+            },
+            "domain": "akamai.com",
+            "country": "RU",
+            "usageType": "Content Delivery Network",
+            "isp": "Akamai Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64952
+            },
+            "to": {
+                "ip": "151.101.65.69",
+                "port": 443
+            },
+            "domain": "fastly.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "Fastly",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64941
+            },
+            "to": {
+                "ip": "93.184.220.29",
+                "port": 80
+            },
+            "domain": "edgecast.com",
+            "country": "US",
+            "usageType": "Content Delivery Network",
+            "isp": "EdgeCast NetBlk",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "2001:0:284a:364:18af:74c:3c2e:194b",
+                "port": 64945
+            },
+            "to": {
+                "ip": "2a00:1450:4010:c05::5e",
+                "port": 80
+            },
+            "domain": "1e100.net",
+            "country": "RU",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "EU Metro Frontend",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64947
+            },
+            "to": {
+                "ip": "2.23.167.176",
+                "port": 80
+            },
+            "domain": "akamai.com",
+            "country": "RU",
+            "usageType": "Content Delivery Network",
+            "isp": "Akamai International BV",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64955
+            },
+            "to": {
+                "ip": "34.217.171.9",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon Technologies Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64946
+            },
+            "to": {
+                "ip": "2.23.167.176",
+                "port": 80
+            },
+            "domain": "akamai.com",
+            "country": "RU",
+            "usageType": "Content Delivery Network",
+            "isp": "Akamai International BV",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64949
+            },
+            "to": {
+                "ip": "173.194.222.94",
+                "port": 80
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 64966
+            },
+            "to": {
+                "ip": "18.165.122.14",
+                "port": 443
+            },
+            "domain": "amazon.com",
+            "country": "FI",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Amazon.com Inc.",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 65017
+            },
+            "to": {
+                "ip": "2.23.167.145",
+                "port": 80
+            },
+            "domain": "akamai.com",
+            "country": "RU",
+            "usageType": "Content Delivery Network",
+            "isp": "Akamai International BV",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 65018
+            },
+            "to": {
+                "ip": "2.23.167.145",
+                "port": 80
+            },
+            "domain": "akamai.com",
+            "country": "RU",
+            "usageType": "Content Delivery Network",
+            "isp": "Akamai International BV",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 65014
+            },
+            "to": {
+                "ip": "34.160.144.191",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 5
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 65019
+            },
+            "to": {
+                "ip": "173.194.222.94",
+                "port": 80
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 0
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 65010
+            },
+            "to": {
+                "ip": "35.244.181.201",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 3
+        },
+        {
+            "from": {
+                "ip": "10.210.8.221",
+                "port": 65024
+            },
+            "to": {
+                "ip": "35.244.181.201",
+                "port": 443
+            },
+            "domain": "google.com",
+            "country": "US",
+            "usageType": "Data Center/Web Hosting/Transit",
+            "isp": "Google LLC",
+            "abuseScore": 3
+        }
+    ],
+    "memory_check": {
+        "firefox.exe": {
+            ".text": {
+                "result": "OK"
+            }
+        }
+    }
+}

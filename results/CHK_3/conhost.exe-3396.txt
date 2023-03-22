@@ -1,0 +1,16 @@
+{
+    "pid": 3396,
+    "ppid": 5824,
+    "name": "conhost.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "\\??\\C:\\Windows\\system32\\conhost.exe 0x4",
+    "exe_path": "C:\\Windows\\system32\\conhost.exe",
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": null
+}

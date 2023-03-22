@@ -1,0 +1,16 @@
+{
+    "pid": 6744,
+    "ppid": 13256,
+    "name": "git.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "git.exe -c credential.helper= -c core.quotepath=false -c log.showSignature=false status --porcelain -z --untracked-files=no --ignored=no -- results/01-12-2022_14-21-21",
+    "exe_path": null,
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": null
+}

@@ -1,0 +1,85 @@
+{
+    "pid": 23816,
+    "ppid": 1068,
+    "name": "smartscreen.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "C:\\Windows\\System32\\smartscreen.exe -Embedding",
+    "exe_path": "C:\\Windows\\System32\\smartscreen.exe",
+    "packer": "Microsoft Visual C++ 8.0 (DLL),Microsoft Visual C++ 8.0",
+    "signature": "AuthenticodeVerificationResult.NOT_SIGNED",
+    "sections_rights": [
+        {
+            "section": ".text",
+            "rights": [
+                "IMAGE_SCN_CNT_CODE",
+                "IMAGE_SCN_MEM_EXECUTE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".rdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".data",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".pdata",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".didat",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ",
+                "IMAGE_SCN_MEM_WRITE"
+            ]
+        },
+        {
+            "section": ".rsrc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        },
+        {
+            "section": ".reloc",
+            "rights": [
+                "IMAGE_SCN_CNT_INITIALIZED_DATA",
+                "IMAGE_SCN_MEM_DISCARDABLE",
+                "IMAGE_SCN_MEM_READ"
+            ]
+        }
+    ],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": {
+        "smartscreen.exe": {
+            ".text": {
+                "result": "suspicious",
+                "reasons": [
+                    {
+                        "reason": "unequal_section_size",
+                        "data": {
+                            "pe": "0x152000",
+                            "mem": "0x1515A9"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

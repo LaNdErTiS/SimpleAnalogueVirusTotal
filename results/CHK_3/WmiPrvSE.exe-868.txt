@@ -1,0 +1,16 @@
+{
+    "pid": 868,
+    "ppid": 1192,
+    "name": "WmiPrvSE.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": null,
+    "exe_path": null,
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": null
+}

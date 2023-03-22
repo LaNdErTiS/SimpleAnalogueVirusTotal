@@ -1,0 +1,16 @@
+{
+    "pid": 60956,
+    "ppid": 45984,
+    "name": "updater.exe",
+    "score": {
+        "total_score": 0
+    },
+    "cmd_line": "\"C:\\Program Files\\Mozilla Firefox\\updater.exe\" C:\\ProgramData\\Mozilla-1de4eec8-1241-4177-a864-e594e8d1fb38\\updates\\308046B0AF4A39CB\\updates\\0 \"C:\\Program Files\\Mozilla Firefox\" \"C:\\Program Files\\Mozilla Firefox\\updated\" -1",
+    "exe_path": "C:\\Program Files\\Mozilla Firefox\\updater.exe",
+    "packer": "unknown",
+    "signature": "unknown",
+    "sections_rights": [],
+    "mitre_techniques": [],
+    "connections": [],
+    "memory_check": null
+}
